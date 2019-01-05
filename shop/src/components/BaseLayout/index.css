@@ -1,0 +1,26 @@
+.content {
+  background-color: #F9F6F6;
+}
+
+.first-header {
+  background: url('hd1.jpeg');
+}
+
+.second-header {
+  background: url('hd2.jpg');
+}
+
+.third-header {
+  background: url('hd3.jpeg');
+}
+
+.fourth-header {
+  background: url('hd4.jpeg');
+}
+
+.first-header, .second-header, .third-header, .fourth-header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
