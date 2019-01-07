@@ -11,9 +11,10 @@ const Navbar = () => (
     <div className="nav-links">
       <ul>
         <li><NavLink activeClassName="selected" className="nav-link" exact to="/">Home</NavLink></li>
-        <li><NavLink activeClassName="selected" className="nav-link" to="/women">Display</NavLink></li>
-        <li><NavLink activeClassName="selected" className="nav-link" to="/men">FAQs</NavLink></li>
-        <li><NavLink activeClassName="selected" className="nav-link" to="/men">Contact Us</NavLink></li>
+        <li><NavLink activeClassName="selected" className="nav-link" to="/newProducts">New Products</NavLink></li>
+        <li><NavLink activeClassName="selected" className="nav-link" to="/specials">Specials</NavLink></li>
+        <li><NavLink activeClassName="selected" className="nav-link" to="/faq">FAQs</NavLink></li>
+        <li><NavLink activeClassName="selected" className="nav-link" to="/contact">Contact Us</NavLink></li>
       </ul>
     </div>
     <div className="shopping-cart">
