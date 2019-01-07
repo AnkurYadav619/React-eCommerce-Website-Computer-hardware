@@ -15,9 +15,11 @@ class CartProducts extends Component {
       <div>
         <h1>This is the cart</h1>
         <div className="items">
-          {map(this.props.cartProducts, (product) => {
-            <h1>{product.name}</h1>
-          })}
+          {map(this.props.cartProducts,(product, index) => (
+            <div className="cart-item" key={`${product.id}${index}`}>
+              <p>{product.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     );
