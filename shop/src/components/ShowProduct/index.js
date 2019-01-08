@@ -24,7 +24,7 @@ class ShowProduct extends Component {
             <div className="product-bio">
               <p id="product-description">{currentProduct.description}</p>
               <p id="product-price">${currentProduct.price}</p>
-              <Icon small id="add-icon">add_shopping_cart</Icon>
+              <Icon medium id="add-icon">add_shopping_cart</Icon>
             </div>
             <div className="product-review">
               <div className="stars">
@@ -41,9 +41,10 @@ class ShowProduct extends Component {
           <h5>You might also like</h5>
           {PRODUCTS.map((product) => {
             if (
-              product.group === currentProduct.group
-              && product.type === currentProduct.type
-              && product.name !== currentProduct.name) {
+              product.type === currentProduct.type
+              && product.name !== currentProduct.name
+              //product.group === currentProduct.group
+              ) {
               return(
                 <Link to={`/products/${product.id}`}>
                   <div key={product.id} className="item">
