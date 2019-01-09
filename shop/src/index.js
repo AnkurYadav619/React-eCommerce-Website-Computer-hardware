@@ -4,10 +4,16 @@ import './index.css';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import Accessories from './components/Accessories';
 import App from './components/App';
 import BaseLayout from './components/BaseLayout';
 import Cart from './components/Cart';
+import Graphics from './components/Graphics';
+import Monitor from './components/Monitor';
+import NewProducts from './components/NewProducts';
 import ShowProduct from './components/ShowProduct';
+import Specials from './components/Specials';
+import Storage from './components/Storage';
 
 
 
@@ -21,8 +27,12 @@ ReactDOM.render(
         <Route exact path="/" component={App} />
         <Route path="/cart" component={Cart} />
         <Route exact path="/products/:id" component={ShowProduct} />
-
-
+        <Route path="/accessories" component={Accessories} />
+        <Route path="/graphics" component={Graphics}/>
+        <Route path="/storage" component={Storage}/>
+        <Route path="/monitor" component={Monitor}/>
+        <Route path="/newProducts" component={NewProducts}/>
+        <Route path="/specials" component={Specials}/>
       </Switch>
     </BaseLayout>
   </BrowserRouter>
