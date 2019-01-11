@@ -27,6 +27,7 @@ const SpecialItems = () => (
           </div>
         )
       }
+      return null;
     })}
   </div>
 )
