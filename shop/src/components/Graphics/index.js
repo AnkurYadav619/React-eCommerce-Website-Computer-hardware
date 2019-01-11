@@ -34,6 +34,7 @@ class Graphics extends Component {
                 </div>
               )
             }
+            return null;
           })}
         </div>
       </div>
