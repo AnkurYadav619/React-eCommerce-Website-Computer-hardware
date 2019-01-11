@@ -33,6 +33,7 @@ class Storage extends Component{
                 </div>
               )
             }
+            return null;
           })}
         </div>
       </div>
