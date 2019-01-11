@@ -65,6 +65,7 @@ class ShowProduct extends Component {
                 </Link>
               )
             }
+            return null;
           })}
         </div>
       </div>
