@@ -27,6 +27,7 @@ const NewItems = () => (
           </div>
         )
       }
+      return null;
     })}
   </div>
 )
