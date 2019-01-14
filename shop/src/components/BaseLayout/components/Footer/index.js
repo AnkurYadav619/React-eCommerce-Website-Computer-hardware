@@ -5,7 +5,7 @@ import './index.css';
 
 const Footer = () => (
   <div className="footer">
-    <p>© 2017 Copyright Ankur Yadav</p>
+    <p>© 2019 Copyright Ankur Yadav</p>
   </div>
 )
 
