@@ -1,29 +1,31 @@
-//Dependencies
+// Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
-//Internals
+// Internals
 import './index.css';
 
-class CartProducts extends Component {
+
+class Cart extends Component {
   static propTypes = {
+    products: PropTypes.arrayOf(PropTypes.object).isRequired,
     addItemToCart: PropTypes.func.isRequired,
   };
 
   render() {
     return(
-      <div>
-        <h1>This is the cart</h1>
-        <div className="items">
-          {map(this.props.cartProducts,(product, index) => (
-            <div className="cart-item" key={`${product.id}${index}`}>
+      <div className="cart">
+        <h1>My Cart</h1>
+        <div className="cart-items">
+          {map(this.props.products, (product) => (
+            <div className="cart-item" key={`${product.id}`}>
               <p>{product.name}</p>
             </div>
           ))}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default CartProducts;
+export default Cart;
